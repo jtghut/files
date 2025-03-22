@@ -1,0 +1,14 @@
+{
+    "roblox": [
+        {"username": "robloxuser1", "password": "pass12345"},
+        {"username": "robloxuser2", "password": "secure789"}
+    ],
+    "gmail": [
+        {"email": "test1@gmail.com", "password": "gmailpass1"},
+        {"email": "test2@gmail.com", "password": "gmailpass2"}
+    ],
+    "discordnitro": [
+        {"code": "NITRO-ABC123-XYZ789"},
+        {"code": "NITRO-DEF456-UVW012"}
+    ]
+}
