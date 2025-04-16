@@ -251,6 +251,7 @@ local function assassinscript()
     end)
 
     Window:Initialize()
+print("nigger")
 end
 
 assassinscript()
