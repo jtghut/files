@@ -253,34 +253,4 @@ local function assassinscript()
     Window:Initialize()
 end
 
-local whitelist = loadstring(game:HttpGet('https://raw.githubusercontent.com/trewzy/moon/main/whitelist', true))()
-
-local function isWhitelisted(userId)
-    return whitelist[userId] ~= nil
-end
-
-local player = game.Players.LocalPlayer
-local userId = tostring(player.UserId) -- Get the user's ID as a string
-
-if isWhitelisted(userId) then
-    print("Access granted. Welcome " .. player.Name .. "!")
-    if game.PlaceId == 379614936 or game.PlaceId == 860428890 or game.PlaceId == 5006801542 then
-    game.StarterGui:SetCore("SendNotification", {
-            Title = "Finding Game!",
-            Text = "Wait a few seconds.",
-            Duration = 3,
-            Icon = nil,
-    })
-    wait(5)
-    game.StarterGui:SetCore("SendNotification", {
-            Title = "Found game: Assassin!",
-            Text = "Have Fun!",
-            Duration = 3,
-            Icon = nil,
-    })
-    assassinscript()
-end
-else
-    print("Access denied. " .. player.Name .. " is not whitelisted.")
-    return
-end
+assassinscript()
