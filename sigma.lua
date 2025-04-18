@@ -1,7 +1,6 @@
 local function assassinscript()
     local Players = game:GetService("Players")
     local CoreGui = game:GetService("CoreGui")
-    local ts = game:GetService("TeleportService")
 
     local Camera = game:GetService("Workspace").CurrentCamera
     local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
@@ -70,9 +69,6 @@ local function assassinscript()
     local Init = library:Init()
 
     local Main = Init:NewTab("Main")
-
-    local JoinClassicButton = Main:NewButton("Join Classic", function() ts:Teleport(379614936, lp) end)
-    local JoinProButton = Main:NewButton("Join Pro", function() ts:Teleport(860428890, lp) end)
 
     local AntiAFK_Toggle = Main:NewToggle("Anti AFK", false, function(value) AntiAFK = value end)
 
